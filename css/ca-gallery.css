@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: rgb(118, 172, 171);
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -190,7 +190,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/new-header-bg.avif");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -766,4 +766,22 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+.close-canvas-btn{
+    position: relative;
+    right: 0;
+}
+
+.bottom-page-container{
+    background-image: url("../img/footer-bcg.avif");
+}
+
+.team-member,.about-me >*{
+    color: rgb(208, 208, 47);
+}
+
+.close-canvas-btn{
+    position: absolute;
+    /* right: 0; */
 }

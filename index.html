@@ -34,6 +34,9 @@
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
     <section>
+      <div class="close-canvas-btn-container">
+      <button class="close-canvas-btn close-canvas-btn" onclick="openCanvas()">X</button>
+    </div>
       <h4>Contact Me</h4>
       <!-- Form -->
       <form id="submit-form">
@@ -47,7 +50,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">More On that</label>
-          <textarea class="form-control message" id="exampleFormControlTextarea1" rows="6"></textarea>
+          <textarea class="form-control message" id="exampleFormControlTextarea1" placeholder="..." rows="6"></textarea>
         </div>
           <button type="button" class="btn btn-primary submit-form-btn">Submit</button>
       </form>
@@ -58,7 +61,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -76,7 +79,7 @@
             <a class="nav-link js-scroll-trigger" href="#me">Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact" onclick="openCanvas()">Contact</a>
           </li>
         </ul>
       </div>
@@ -96,12 +99,12 @@
 
   <!-- Services -->
   <a name="services"></a>
-  <section>
+  <section class="bg-dark text-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">My best skills conquering thw world of Fullstack:</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -110,42 +113,43 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">JavaScript</h4>
+          <p class="text-muted">All the way from simple variables to complex data structures.<br>
+          We covered all the basics while learning how to connect it all with the rest of our skillset,
+        making our projects interactive manipulating the DOM.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">CSS</h4>
+          <p class="text-muted">Design design and.. more design!!<br>
+          Weather if its borrowing someone elses code using Bootstrap or making it our own,
+        everry project we made just keeps getting better and better..</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">HTML</h4>
+          <p class="text-muted">HTML, the root of it all where everything comes together.
+            Although some may say it is very simple its where it all connects while learnning how to keep it
+            as clean as possible and interact with our JS code, we have many tools to work with so we can be as creative as possible.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
+  <section class="bg-dark text-light" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Some of my projects:</h3>
         </div>
       </div>
       <div class="row portfolio-container">
@@ -153,16 +157,16 @@
     </div>
   </section>
 
-
+<div class="bottom-page-container">
   <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
+  <section id="me" style="padding: 0px;">
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/me.jpg" alt="My pic">
+          <img class="mx-auto rounded-circle mt-3" src="img/team/me.jpg" alt="My pic">
           <h4>Amir Gombo</h4>
-          <p class="text-muted">Fullstack Programmer</p>
-          <ul class="list-inline social-buttons">
+          <p>Fullstack Programmer To Be</p>
+          <ul class="list-inline social-buttons mb-3">
             <li class="list-inline-item">
               <a href="#">
                 <i class="fa fa-twitter"></i>
@@ -181,8 +185,9 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-8 flex-align-center">
-        <p class="large text-muted  about-description">Currently taking the Coding-Accademy fullstack class and
+      <div class="col-sm-8 flex-align-center about-me">
+        <h2>A bit about me..</h2>
+        <p class="large about-description">Currently taking the Coding-Accademy fullstack class and
           learnning how to program from scratch!<br>
           Today i work as a surf instructor, hoping my next job would be with you as the best fullstack programmer you
           ever hired! <br>
@@ -233,6 +238,7 @@
       </div>
     </div>
   </footer>
+</div>
 
   <!-- Portfolio Modals -->
 

@@ -24,7 +24,7 @@ function renderPortfolios() {
       </div>
       <img class="img-fluid" src="img/portfolio/00${project.idx}.jpg" alt="">
     </a>
-    <div class="portfolio-caption">
+    <div class="portfolio-caption bg-dark text-light">
       <h4>${project.name}</h4>
       <p class="text-muted">Illustration</p>
     </div>
@@ -43,7 +43,7 @@ function onOpenModal(id) {
     const strHtml = `
                    <h2>${project.name}</h2>
                     <p class="item-intro text-muted">${project.title}</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/00${project.idx}.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/00${project.idx}-full.jpg" alt="">
                     <p>${project.desc}</p>
                     <ul class="list-inline">
                       <li>Date: ${project.publishedAt}</li>

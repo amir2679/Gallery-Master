@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="bg-info">
+    <h1>Welcome To My Bootstrap!</h1>
+
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalLong" onclick="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Etc</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+
+    <div class="container text-center">
+        <div class="d-md-flex align-items-center justify-content-evenly">
+            <div>
+                <h1>Upload New Pictures!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis cupiditate vel placeat.
+                    Accusantium inventore est modi iusto debitis nisi ut reiciendis ducimus, at culpa voluptas vel enim
+                    animi repudiandae consectetur eligendi nam, perferendis laborum numquam, ullam unde qui dicta? Ad
+                    adipisci rerum praesentium. Laudantium dolorum quia adipisci! Esse, culpa?</p>
+                <button class="btn btn-success">Upload</button>
+            </div>
+            <img class="img-fluid w-30" src="img/view.avif" alt="">
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section class="bg-primary my-5 p-5">
+        <div class="container">
+            <h3>Sign Up</h3>
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Enter Email" type="text">
+                    <button class="btn btn-dark text-light btn-lg">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/main.js"></script>
+</body>
+
+</html>
