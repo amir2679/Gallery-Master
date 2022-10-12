@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body onload="onInit()">
+    <!-- <section class="input-modal">
+        <label class="user-input-label">
+            Search:
+            <input type="text" placeholder="Type something..." class="user-input">
+            <button onclick="onUserUpdate()">Update</button>
+        </label>
+    </section> -->
+    <h1>Welcome To The Book Shop!</h1>
+    <label>
+        Switch Mode
+        <input onclick="onChangeMode(this)" type="checkbox" class="check-box">
+    </label>
+    <label>
+        Search:
+        <input type="text" class="filter-txt" oninput="onSetFilter({txt: this.value})"
+            placeholder="Type something..." />
+    </label>
+    <label>
+        Min Rate:
+        <input type="range" min="0" max="10" value="0" class="filter-rate-range"
+            onchange="this.title=this.value;onSetFilter({minRate: this.value})" />
+    </label>
+    <label>
+        Max Price:
+        <input type="range" min="0" max="100" value="100" class="filter-price-range"
+            onchange="this.title=this.value;onSetFilter({maxPrice: this.value})" />
+    </label>
+    <button disabled class="perv-page-btn btn-disable" onclick="onChangePage(-1)">&#60</button>
+    <button class="next-page-btn" onclick="onChangePage(1)">&#62</button>
+    <button title="Add Book" onclick="onAddBook()">Add Book!</button>
+    <div class="main-layout-container">
+        <section class="books-table-container show-table">
+            <table class="books-table">
+                <thead>
+                    <th onclick="onSortBy(this)">ID</th>
+                    <th onclick="onSortBy(this)">Title</th>
+                    <th onclick="onSortBy(this)">Price</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section class="books-cards-container">
+        </section>
+        <!-- <section class="paging-btns">
+            <button disabled class="perv-page-btn btn-disable" onclick="onChangePage(-1)">&#60</button>
+            <button class="next-page-btn" onclick="onChangePage(1)">&#62</button>
+        </section> -->
+    </div>
+    <div class="modal">
+        <h3>Title: <span></span></h3>
+        <h4>Rate: <button onclick="onRate(1)">+</button> <span></span> <button onclick="onRate(-1)">-</button></h4>
+        <h5>Price: <span></span>$</h5>
+        <p></p>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.shop.service.js"></script>
+    <script src="js/book.shop.controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+body {
+    background-color: aquamarine;
+    /* background-image: url('../pics/library.jfif');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* .input-modal {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #7a603e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 0%;
+}
+.user-input-label {
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+} */
+
+table {
+    background-color: blanchedalmond;
+    margin-top: 10px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(235, 212, 178);
+}
+
+table,
+th,
+td {
+    border: 2px dotted black;
+}
+
+td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    border-radius: 5px;
+    color: #e4e41c;
+    padding: 10px 5px;
+    background-color: #7a603e;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+
+.modal {
+    background-color: #111;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 150%;
+    height: 80vh;
+    min-width: 300px;
+    text-align: center;
+    transition: left .5s;
+}
+
+.show-modal {
+    left: 50%;
+    color: whitesmoke;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.table-btns {
+    display: flex;
+}
+
+.table-btns>button {
+    flex-grow: 1;
+}
+
+.read-btn {
+    background-color: #4caf50;
+}
+
+.update-btn {
+    background-color: rgb(166 74 74);
+}
+
+.delete-btn {
+    background-color: rgb(128 128 198);
+}
+
+.read-btn,
+.update-btn,
+.delete-btn {
+    margin: 2px;
+}
+
+.books-cards-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 30%;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    /* top: 0px; */
+    transition: 0.6s;
+    transform: translateX(-100%);
+}
+
+.books-table-container {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translateX(250%);
+    transition: 0.6s;
+    /* transform: translate(50%, -50%); */
+}
+
+.show-cards {
+    transform: translateX(0%);
+}
+
+.show-table {
+    transform: translateX(50%);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+/* .fade {
+    filter: brightness(70%);
+} */
+
+th:not(:last-child) {
+    cursor: pointer;
+}
+
+.btn-disable {
+    background-color: beige;
+    transition: 0.6s;
+}
+
+/* .paging-btns{
+    position: absolute;
+} */
