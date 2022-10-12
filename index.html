@@ -20,6 +20,7 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
   <!-- Custom styles for this template -->
   <link href="css/ca-gallery.css" rel="stylesheet">
@@ -33,10 +34,10 @@
   <aside class="offcanvas-aside">
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
-    <section>
-      <div class="close-canvas-btn-container">
+    <div class="close-canvas-btn-container">
       <button class="close-canvas-btn close-canvas-btn" onclick="openCanvas()">X</button>
     </div>
+    <section class="d-flex row flex-align-center">
       <h4>Contact Me</h4>
       <!-- Form -->
       <form id="submit-form">
@@ -52,7 +53,9 @@
           <label for="exampleFormControlTextarea1">More On that</label>
           <textarea class="form-control message" id="exampleFormControlTextarea1" placeholder="..." rows="6"></textarea>
         </div>
-          <button type="button" class="btn btn-primary submit-form-btn">Submit</button>
+        <div class="btn-submit-container flex-align-center">
+          <button type="button" class="btn btn-secondary submit-form-btn">Submit</button>
+        </div>
       </form>
     </section>
 
@@ -115,8 +118,8 @@
           </span>
           <h4 class="service-heading">JavaScript</h4>
           <p class="text-muted">All the way from simple variables to complex data structures.<br>
-          We covered all the basics while learning how to connect it all with the rest of our skillset,
-        making our projects interactive manipulating the DOM.</p>
+            We covered all the basics while learning how to connect it all with the rest of our skillset,
+            making our projects interactive manipulating the DOM.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -125,18 +128,19 @@
           </span>
           <h4 class="service-heading">CSS</h4>
           <p class="text-muted">Design design and.. more design!!<br>
-          Weather if its borrowing someone elses code using Bootstrap or making it our own,
-        everry project we made just keeps getting better and better..</p>
+            Weather if its borrowing someone elses code using Bootstrap or making it our own,
+            everry project we made just keeps getting better and better..</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">HTML</h4>
           <p class="text-muted">HTML, the root of it all where everything comes together.
             Although some may say it is very simple its where it all connects while learnning how to keep it
-            as clean as possible and interact with our JS code, we have many tools to work with so we can be as creative as possible.
+            as clean as possible and interact with our JS code, we have many tools to work with so we can be as creative
+            as possible.
           </p>
         </div>
       </div>
@@ -157,51 +161,51 @@
     </div>
   </section>
 
-<div class="bottom-page-container">
-  <!-- Me -->
-  <section id="me" style="padding: 0px;">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle mt-3" src="img/team/me.jpg" alt="My pic">
-          <h4>Amir Gombo</h4>
-          <p>Fullstack Programmer To Be</p>
-          <ul class="list-inline social-buttons mb-3">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/amir.gombo">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
+  <div class="bottom-page-container">
+    <!-- Me -->
+    <section id="me" style="padding: 0px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle mt-3" src="img/team/me.jpg" alt="My pic">
+            <h4>Amir Gombo</h4>
+            <p>Fullstack Programmer To Be</p>
+            <ul class="list-inline social-buttons mb-3">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/amir.gombo">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 flex-align-center about-me d-flex row">
+          <h2>A bit about me..</h2>
+          <p class="large about-description">Currently taking the Coding-Accademy fullstack class and
+            learnning how to program from scratch!<br>
+            Today i work as a surf instructor, hoping my next job would be with you as the best fullstack programmer you
+            ever hired! <br>
+            My hobies include playing the guitar, surfing, programming and traveling the world.
+          </p>
         </div>
       </div>
-      <div class="col-sm-8 flex-align-center about-me">
-        <h2>A bit about me..</h2>
-        <p class="large about-description">Currently taking the Coding-Accademy fullstack class and
-          learnning how to program from scratch!<br>
-          Today i work as a surf instructor, hoping my next job would be with you as the best fullstack programmer you
-          ever hired! <br>
-          My hobies include playing the guitar, surfing, programming and traveling the world.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 flex-align-center">
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row flex-align-center">
+          <!-- <div class="col-md-4 flex-align-center">
           <a href="http://coding-academy.org" target="_blank">
             <img src="./img/ca-logo.png" alt="">
           </a>
@@ -224,37 +228,35 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="col-md-4 flex-align-center">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">More Me</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Even More</a>
-            </li>
-          </ul>
+        </div> -->
+          <div class="col-md-4 flex-align-center">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">More Me</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Even More</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
   <!-- Portfolio Modals -->
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content bg-dark text-light">
         <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
+          <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
         </div>
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+              <div class="modal-body text-light col">
               </div>
             </div>
           </div>

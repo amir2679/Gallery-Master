@@ -37,7 +37,7 @@ function renderPortfolios() {
 }
 
 
-function onOpenModal(id) {
+function onOpenModal() {
     const projId = $(this).data().proj
     const project = getProjectById(projId)
     const strHtml = `
@@ -50,10 +50,10 @@ function onOpenModal(id) {
                       <li>Client: Threads</li>
                       <li>Category: Illustration</li>
                     </ul>
+                    <button class="btn btn-secondery" type="button" onclick="onOpenProj('${project.name}')">Check It Out!</button>
                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                       <i class="fa fa-times"></i>
                       Close Project</button>
-                      <button class="btn btn-secondery" type="button" onclick="onOpenProj('${project.name}')">Check It Out!</button>
 
                       `
 

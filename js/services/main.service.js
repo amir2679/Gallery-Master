@@ -4,8 +4,8 @@ var gProjs = [
     {
         id: makeId(),
         name: "Books Shop",
-        title: "Better push those boxes",
-        desc: "lorem ipsum lorem ipsum lorem ipsum",
+        title: "Book Shop CRUDL:",
+        desc: "App that shows a list of books and let the user interact with it.",
         url: "Projects/Books Shop",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
@@ -14,9 +14,9 @@ var gProjs = [
 
     {
         id: makeId(),
-        name: "mineswiper",
-        title: "Better push those boxes",
-        desc: "lorem ipsum lorem ipsum lorem ipsum",
+        name: "Mineswiper",
+        title: "Mineswiper Game:",
+        desc: "The famous Mineswiper game with some cool recursive function",
         url: "Projects/mineswiper",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
@@ -24,9 +24,9 @@ var gProjs = [
     },
     {
         id: makeId(),
-        name: "pacmen",
-        title: "Better push those boxes",
-        desc: "lorem ipsum lorem ipsum lorem ipsum",
+        name: "Pacmen",
+        title: "Pacmen Game:",
+        desc: "Old but gold... the famous pacmen!",
         url: "Projects/pacmen",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
@@ -35,8 +35,8 @@ var gProjs = [
     {
         id: makeId(),
         name: "Guess-Me",
-        title: "Better push those boxes",
-        desc: "lorem ipsum lorem ipsum lorem ipsum",
+        title: "Akinator Game:",
+        desc: "Think of whatever character you want, our genie will try and find it...<br> If he dosnt find than he will try to learn for next time",
         url: "Projects/Guess-Me",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
