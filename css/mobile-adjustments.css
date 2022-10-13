@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+
+    .offcanvas-aside {
+        width: 50vw;
+        left: -100vw;
+    }
+
+    .offcanvas-aside-open {
+        left: 0;
+    }
+
+    .offcanvas-btn{
+        position: fixed;
+        left: 3%;
+    }
+}
